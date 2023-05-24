@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "mrseavessmallcaps";
+    src: url("fonts/mrseavessmallcaps-webfont.woff2") format("woff2");
+    src: url("fonts/mrseavessmallcaps-webfont.woff") format("woff");
+}
+
+body {
+    font-family: 'mrseavessmallcaps';
+    background-image: url(assets/background.jpg);
+    background-position: 50% 0px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    animation: fadeInAnimation ease-in 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+
+}
+
+body::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2222224d;
+}
+
+.main-container {
+    color: #7B19F2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    font-size: 7rem;
+   
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    -webkit-animation: fadeinout 3.8s ease-in infinite;
+    animation: fadeinout 3.8s ease-out infinite;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .title {
+        font-size: 6.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .title {
+        font-size: 6.7rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .title {
+        font-size: 6.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .title {
+        font-size: 6rem;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 3.2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.6rem;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes fadeinout {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
