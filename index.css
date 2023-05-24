@@ -14,8 +14,7 @@ body {
     animation: fadeInAnimation ease-in 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-
-
+    margin: 0;
 }
 
 body::before {
